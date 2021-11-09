@@ -49,11 +49,16 @@ for (let k = 0; k <= 10; k++) {
 console.log('----------------------------------------')
 
 /**
- * print values from 1 to 10 which are multiple values of 2 and 5
+ * print first 3 values from 1 to 100 which are multiple values of 2 and 5
 */
-for (let l = 1; l <= 10; l++) {
+let counter = 0
+for (let l = 1; l <= 100; l++) {
     if (l % 2 == 0 && l % 5 == 0) {
+        counter++
         console.log('multiles of 2 and 5 :', l)
+        if (counter == 3) {
+            break
+        }
     }
 }
 console.log('----------------------------------------')

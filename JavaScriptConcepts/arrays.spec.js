@@ -70,6 +70,9 @@ let fruits = ["Banana", "Mango", "Pomogrante", "Apple"]
 fruits.sort() //Ascending oder of only string
 console.log(fruits)
 
+fruits.reverse() //Descending oder of only string
+console.log(fruits)
+
 var numbers = [18, 12, 15, 13, 16]
 numbers.sort()
 console.log(numbers)
@@ -77,4 +80,10 @@ console.log(numbers)
 numbers.sort(function (a, b) {
     return a - b // min diff : push to beginning
 })
-console.log(numbers)
+console.log('ascending', numbers)// ascending 
+
+
+numbers.sort(function (a, b) {
+    return b - a
+})
+console.log('decending', numbers)// decending 

@@ -1,4 +1,4 @@
-class Person {
+export default class Person {
 
     //Class Var
     age = 25

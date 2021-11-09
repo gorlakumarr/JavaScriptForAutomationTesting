@@ -1,5 +1,8 @@
 //Block of code -> Function
 
+import './classes.spec'
+import Person from './classes.spec'
+
 /*
 var - global level/function level
 
@@ -26,3 +29,6 @@ console.log(add(2, 3))
 
 let sumOfInt = (c, d) => c + d // fat boy short operator
 console.log(sumOfInt(5, 6))
+
+let person = new Person("Tim", "Sony")
+console.log(person.fullName())

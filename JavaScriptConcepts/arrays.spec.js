@@ -48,4 +48,10 @@ console.log(total)
 
 var scores = [12, 13, 14, 16, 17, 18]
 let evenNumbersArray = scores.filter(score => score % 2 == 0)
-console.log('Even number :', evenNumbersArray)
+console.log('Even number :', evenNumbersArray)//[ 12, 14, 16, 18 ]
+
+/**
+ * Create new even number array and multiply each value with 3
+ */
+let evenArrayMultipleof3 = evenNumbersArray.map(val => val * 3)
+console.log('Even number * 3 :', evenArrayMultipleof3)// [ 36, 42, 48, 54 ]

@@ -51,7 +51,30 @@ let evenNumbersArray = scores.filter(score => score % 2 == 0)
 console.log('Even number :', evenNumbersArray)//[ 12, 14, 16, 18 ]
 
 /**
- * Create new even number array and multiply each value with 3
+ * Create new even number array and multiply each value with 3 and sum them
  */
-let evenArrayMultipleof3 = evenNumbersArray.map(val => val * 3)
-console.log('Even number * 3 :', evenArrayMultipleof3)// [ 36, 42, 48, 54 ]
+let mappedArray = evenNumbersArray.map(val => val * 3)
+console.log('Even number * 3 :', mappedArray)// [ 36, 42, 48, 54 ]
+
+let sumValue = mappedArray.reduce((sum, val) => sum + val)
+console.log('Sum of Even number * 3 :', sumValue)//180
+console.log('-----------------------------------------------')
+
+var values = [12, 13, 14, 16, 17, 18]
+let sumofCondition = values.filter(val => val % 2 == 0).map(el => el * 3).reduce((sumVal, val) => sumVal + val)
+console.log('Sum of Even number * 3 :', sumofCondition)//180
+
+console.log('-----------------------------------------------')
+
+let fruits = ["Banana", "Mango", "Pomogrante", "Apple"]
+fruits.sort() //Ascending oder of only string
+console.log(fruits)
+
+var numbers = [18, 12, 15, 13, 16]
+numbers.sort()
+console.log(numbers)
+
+numbers.sort(function (a, b) {
+    return a - b // min diff : push to beginning
+})
+console.log(numbers)

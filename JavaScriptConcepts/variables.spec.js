@@ -89,6 +89,6 @@ console.log(num)
 
 /**
  * const doesnt allow reassignment and redeclaration
-F */
+ */
 
 

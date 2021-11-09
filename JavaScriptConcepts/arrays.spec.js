@@ -47,3 +47,5 @@ let total = marksArray.reduce((sumOfArray, mark) => sumOfArray + mark, 0)
 console.log(total)
 
 var scores = [12, 13, 14, 16, 17, 18]
+let evenNumbersArray = scores.filter(score => score % 2 == 0)
+console.log('Even number :', evenNumbersArray)

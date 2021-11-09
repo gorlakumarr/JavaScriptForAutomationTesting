@@ -4,6 +4,8 @@
 var - global level/function level
 
 let - global/block level - {}
+
+const - cant change in future
 */
 
 function add(a, b) {
